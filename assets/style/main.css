@@ -1,0 +1,68 @@
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-top: 26vh;
+  transition: 0.4s;
+  margin-bottom: 8vh;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin-top: 37vh;
+  transition: 0.4s;
+  margin-bottom: 8vh;
+}
+
+.card {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px gray;
+  display: flex;
+  aspect-ratio: 8/12;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  border-style: solid;
+  border-color: white;
+  border-width: 6px;
+  overflow: hidden;
+  transition: 0.4s;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 8px 12px gray;
+}
+
+.nom {
+  text-transform: uppercase;
+  font-size: 24px;
+  width: 100%;
+  text-align: center;
+  font-family: "Denk One", sans-serif;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.1em;
+}
+
+.imgPoke {
+  width: 80%;
+}
+
+.idpoke {
+  color: white;
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

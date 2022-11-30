@@ -1,0 +1,52 @@
+.main-contact,
+.main-subscribe {
+  margin-top: 15vh;
+}
+
+.input-subscribe,
+.input-contact {
+  border: none;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.form-subscribe,
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.p-subscribe,
+.p-contact {
+  font-family: "Denk One", sans-serif;
+  background-color: #ed5564;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.message {
+  border: none;
+  height: 200px;
+  width: 350px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.objet,
+.mail {
+  border: none;
+  height: 30px;
+  width: 350px;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}

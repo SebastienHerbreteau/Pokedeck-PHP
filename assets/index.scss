@@ -1,0 +1,57 @@
+.p-bienvenue {
+  display: flex;
+  justify-content: center;
+  border: none;
+  width: fit-content;
+  font-size: 18px;
+  padding: 10px;
+  padding-top: 50px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  /* background-image: url('assets/background.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; */
+  background-color: #ed5564;
+  color: white;
+}
+
+.container-pokeball {
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: -105px;
+  margin-left: -350px;
+}
+
+.pokeball {
+  width: 20px;
+  animation-name: roule;
+  animation-duration: 0.7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes roule {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg)
+  }
+}
+
+.pika {
+  width: 150px;
+  transform: scaleX(-1);
+  margin-bottom: -4px;
+  margin-right: -450px;
+}
+
+.main-index {
+  margin-top: 28vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

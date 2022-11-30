@@ -1,0 +1,36 @@
+@media (max-width: 425px) {
+  .card {
+    width: 120px;
+    border-width: 3px;
+  }
+  .nom,
+.idpoke {
+    font-size: 12px;
+  }
+  .container-pokeball {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: -105px;
+    margin-left: -150px;
+  }
+  .pika {
+    width: 150px;
+    transform: scaleX(-1);
+    margin-bottom: -4px;
+    margin-right: -170px;
+  }
+  .modal {
+    width: 95%;
+    height: 70%;
+  }
+  span > p,
+.ff {
+    font-size: 14px;
+    line-height: 1.2em;
+  }
+  .id > P {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=responsive425.css.map */

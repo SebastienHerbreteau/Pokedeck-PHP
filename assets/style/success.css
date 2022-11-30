@@ -1,0 +1,8 @@
+.success {
+  background-color: bisque;
+}
+.success > p {
+  color: red;
+}
+
+/*# sourceMappingURL=success.css.map */
