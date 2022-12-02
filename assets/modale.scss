@@ -1,9 +1,5 @@
 $font-size: 18px;
 
-.modalActive {
-  display: flex !important;
-}
-
 .modal {
   position: fixed;
   display: none;
@@ -15,6 +11,10 @@ $font-size: 18px;
   z-index: 10;
   top: 50%;
   background-color: rgba(0, 0, 0, 0.871);
+}
+
+.modalActive {
+  display: flex;
 }
 
 .h2Modal {
@@ -188,5 +188,65 @@ $font-size: 18px;
 
   to {
     -webkit-mask-position: -50%;
+  }
+}
+
+.modalUnactive {
+  display: none;
+}
+
+
+.swipeLeft {
+  animation-name: swipeLeft;
+  animation-duration: 1s;
+
+}
+
+@keyframes swipeLeft {
+  0% {
+    left: 50%;
+  }
+
+  33% {
+    left: -50%;
+    opacity: 0;
+  }
+
+  66% {
+    left: 150%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 50%;
+    opacity: 1;
+  }
+}
+
+
+.swipeRight {
+  animation-name: swipeRight;
+  animation-duration: 1s;
+
+}
+
+@keyframes swipeRight {
+  0% {
+    left: 50%;
+  }
+
+  33% {
+    left: 150%;
+    opacity: 0;
+  }
+
+  66% {
+    left: -50%;
+    opacity: 0;
+  }
+
+  100% {
+    left: 50%;
+    opacity: 1;
   }
 }

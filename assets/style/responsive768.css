@@ -99,6 +99,10 @@ ul {
     top: 30%;
     right: 1%;
   }
+  #right,
+#left {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=responsive768.css.map */

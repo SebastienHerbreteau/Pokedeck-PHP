@@ -6,7 +6,6 @@ require('template-parts/head.php');
 
     <header>
         <?php require('template-parts/header.php') ?>
-
     </header>
 
     <main>

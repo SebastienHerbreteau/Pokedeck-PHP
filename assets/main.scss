@@ -1,5 +1,4 @@
-main 
-{
+main {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -10,8 +9,7 @@ main
   margin-bottom: 8vh;
 }
 
-.container-cards
-{
+.container-cards {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -22,8 +20,7 @@ main
   margin-bottom: 8vh;
 }
 
-.card 
-{
+.card {
   width: 200px;
   border-radius: 10px;
   box-shadow: 1px 1px 1px gray;
@@ -43,14 +40,12 @@ main
   margin: 10px;
 }
 
-.card:hover 
-{
+.card:hover {
   transform: scale(1.05);
   box-shadow: 4px 8px 12px gray;
 }
 
-.nom 
-{
+.nom {
   text-transform: uppercase;
   font-size: 24px;
   width: 100%;
@@ -60,12 +55,12 @@ main
   letter-spacing: 0.1em;
 }
 
-.imgPoke{
+.imgPoke {
 
   width: 80%;
 }
 
-.idpoke{
+.idpoke {
   color: white;
   align-self: flex-end;
   margin-right: 10px;

@@ -23,7 +23,6 @@ require('template-parts/head.php');
         <?php require('template-parts/footer.php'); ?>
     </footer>
 
-    <script type="module" src="script/app.js"></script>
-    <script type="module" src="node_modules/touchsweep/dist/touchsweep.js"></script>
+
 
 </body>

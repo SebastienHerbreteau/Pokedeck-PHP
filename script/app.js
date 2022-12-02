@@ -163,15 +163,59 @@ window.addEventListener("scroll", () => {
 let modal = document.querySelector(".modal");
 let cards = document.querySelectorAll(".card");
 
+
+
+
 cards.forEach((card) => {                                        // selection de toute les cartes
   card.addEventListener("click", () => { 
-    console.log("hello")         ;                 // surveillance du click sur chaque carte
+
     
 
     modal.classList.add("modalActive");                            // classe activée sur la modale
     let id = card.firstElementChild.textContent;                   // selection du contenu texte du premier enfant de "card" => ici l'"id"
     fetchPokemon(id);                                              // appel de la fonction qui remplit la modale avec l'id precedemment récupérer
     
+
+    modal.addEventListener('touchstart', function (event) {
+      touchstartX = event.changedTouches[0].screenX;
+      touchstartY = event.changedTouches[0].screenY;
+    }, false);
+    
+    modal.addEventListener('touchend', function (event) {
+      touchendX = event.changedTouches[0].screenX;
+      touchendY = event.changedTouches[0].screenY;
+      handleGesture(modal);
+    }, false);
+    
+    
+    function handleGesture(modal) {
+      if (touchendX < touchstartX) {
+        modal.classList.add('swipeLeft')
+        
+          setTimeout(() => {
+            id++;
+            fetchPokemon(id);
+          }, 500); 
+          setTimeout(() => {
+            modal.classList.remove('swipeLeft')
+          }, 1000);
+      }
+    
+      if (touchendX > touchstartX) {
+        modal.classList.add('swipeRight')
+        
+        setTimeout(() => {
+          id--;
+          fetchPokemon(id);
+        }, 500); 
+        setTimeout(() => {
+          modal.classList.remove('swipeRight')
+        }, 1000);
+      }
+
+    }
+
+
     window.onclick = function (e) {   
       if(e.target.id === "left")
         {                              
@@ -179,10 +223,11 @@ cards.forEach((card) => {                                        // selection de
         fetchPokemon(id);  
         }
       else if(e.target.id === "right")
-        {id++;
+        {
+        id++;
         fetchPokemon(id);
       }                                      
-      else if(e.target.id === "close" || e.target.id === "ipm") 
+      else if(e.target.id === "close") 
         {          
         modal.classList.remove("modalActive");                         
         };   
@@ -219,4 +264,3 @@ burger.addEventListener("click",()=>{
   bas.classList.toggle("active-rota-bas")
   nav.classList.toggle("active-nav")
 })
-

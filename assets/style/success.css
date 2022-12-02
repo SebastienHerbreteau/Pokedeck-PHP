@@ -1,8 +1,14 @@
 .success {
-  background-color: bisque;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
+
 .success > p {
-  color: red;
+  color: white;
 }
 
 /*# sourceMappingURL=success.css.map */

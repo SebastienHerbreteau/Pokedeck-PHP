@@ -1,12 +1,8 @@
 <?php
-   $servname = 'localhost';
-   $dbname = 'pokemon';
-   $dbuser = 'root';
-   $pass = '';
-
-   try {
-       $dbco = new PDO("mysql:host=$servname;dbname=$dbname", $dbuser, $pass);
-       $dbco->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-   } catch (PDOException $e) {
-       echo "Erreur : " . $e->getMessage();
-   }
+$servname = 'localhost';
+$dbname = 'pokemon';
+$dbuser = 'root';
+$pass = '';
+$path = "mysql:host=$servname;dbname=$dbname;charset=utf8";
+$bdd = new PDO($path, $dbuser, $pass);
+$result = htmlspecialchars(addslashes($_GET['search'] ?? 'default'));
